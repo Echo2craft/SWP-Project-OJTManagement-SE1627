@@ -84,7 +84,7 @@ nav{
     color: #000000;
     transition: ease-out 0.3s;
     position: relative;
-    background: url(/HomePageWithoutLogin/heroicons-outline_login.png) -100% 50% no-repeat;
+    background: url(heroicons-outline_login.png) -100% 50% no-repeat;
     
     /* background: #FFFEFE; */
     border: 2px solid #0011AB;
@@ -96,7 +96,7 @@ nav{
 .btstyle:hover, .btstyle:focus{
     word-wrap: nowrap;
     overflow: hidden;
-    background: url(/HomePageWithoutLogin/heroicons-outline_login_active.png) -100% 50% no-repeat;
+    background: url(heroicons-outline_login_active.png) -100% 50% no-repeat;
 
     color: #FFFEFE;
     background-color: #0011AB;
@@ -158,7 +158,7 @@ input{
     position: absolute;
     order: 1;
     width: 3rem;
-    background: url(/HomePageWithoutLogin/heroicons-outline_x.png) -200% 50% no-repeat;
+    background: url(heroicons-outline_x.png) -200% 50% no-repeat;
     
     /* background: #FFFEFE; */
     border-right: 0;
@@ -172,7 +172,7 @@ input{
     position: absolute;
     order: 3;
     width: 3rem;
-    background: url(/HomePageWithoutLogin/heroicons-outline_search.png) 300% 50% no-repeat;
+    background: url(heroicons-outline_search.png) 300% 50% no-repeat;
     
     /* background: #FFFEFE; */
     border-left: 0;
@@ -231,12 +231,12 @@ input{
     transition: all 0.3s ease-out;
 }
 .searchinput:not(:placeholder-shown) ~ .searchreset:hover, .searchreset:focus {
-    background: url(/HomePageWithoutLogin/heroicons-outline_x_active.png) 50% 50% no-repeat;
+    background: url(heroicons-outline_x_active.png) 50% 50% no-repeat;
     border-radius: 25px 0px 0px 25px;
 }
 
 .searchinput:not(:placeholder-shown) ~ .searchsubmit:hover, .searchsubmit:focus {
-    background: url(/HomePageWithoutLogin/heroicons-outline_search_active.png) 50% 50% no-repeat;
+    background: url(heroicons-outline_search_active.png) 50% 50% no-repeat;
     border-radius: 0px 25px 25px 0px;
 }
 
@@ -350,7 +350,7 @@ footer{
 
         background-size: auto;
 
-        background: url(/HomePageWithoutLogin/heroicons-outline_login.png) 40% 50% no-repeat;
+        background: url(heroicons-outline_login.png) 40% 50% no-repeat;
         /* background: #FFFEFE; */
         transition: ease-out 0.3s;
     }
@@ -359,7 +359,7 @@ footer{
         word-wrap: nowrap;
         overflow: hidden;
         background-size: auto;
-        background-image: url(/HomePageWithoutLogin/heroicons-outline_login_active.png);
+        background-image: url(heroicons-outline_login_active.png);
         background-position: 60% 50%;
     }
     .btstyle:focus{
@@ -367,7 +367,7 @@ footer{
         word-wrap: nowrap;
         overflow: hidden;
         background-size: auto;
-        background-image: url(/HomePageWithoutLogin/heroicons-outline_login_active.png);
+        background-image: url(heroicons-outline_login_active.png);
         background-position: 60% 50%;
     }
     .credits{
