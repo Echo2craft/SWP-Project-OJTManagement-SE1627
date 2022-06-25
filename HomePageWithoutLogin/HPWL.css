@@ -38,7 +38,7 @@ nav{
     z-index: 99;
     padding: 32px 32px;
     
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 25px 25px;
 }
@@ -125,15 +125,15 @@ nav{
 
 .mainbox{
     width: auto;
-    margin: 0 50px;
+    margin: 0 100px;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 16px;
+    padding: 16px 0px;
 
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
 }
@@ -208,12 +208,12 @@ input{
     text-align: center;
 }
 
-.searchinput:placeholder-shown ~ .searchreset:focus, .searchreset:hover{
+.searchinput:placeholder-shown ~ .searchreset:focus,.searchinput:placeholder-shown ~ .searchreset:hover{
     background-position: -200% 50%;
     transition: all 0.3s ease-out;
 }
 
-.searchinput:placeholder-shown ~ .searchsubmit:focus, .searchsubmit:hover{
+.searchinput:placeholder-shown ~ .searchsubmit:focus,.searchinput:placeholder-shown ~ .searchsubmit:hover{
     background-position: 300% 50%;
     transition: all 0.3s ease-out;
 }
@@ -235,18 +235,17 @@ input{
     background-position: 50% 50%;
     transition: all 0.3s ease-out;
 }
-.searchinput:not(:placeholder-shown) ~ .searchreset:hover, .searchreset:focus {
+.searchinput:not(:placeholder-shown) ~ .searchreset:hover,.searchinput:not(:placeholder-shown) ~ .searchreset:focus {
     background: url(heroicons-outline_x_active.png) 50% 50% no-repeat;
     border-radius: 25px 0px 0px 25px;
 }
 
-.searchinput:not(:placeholder-shown) ~ .searchsubmit:hover, .searchsubmit:focus {
+.searchinput:not(:placeholder-shown) ~ .searchsubmit:hover,.searchinput:not(:placeholder-shown) ~ .searchsubmit:focus {
     background: url(heroicons-outline_search_active.png) 50% 50% no-repeat;
     border-radius: 0px 25px 25px 0px;
 }
 
 .contentbox{
-    display: flex;
     width: 100%;
     overflow: hidden;
     justify-content: space-between;
@@ -254,25 +253,26 @@ input{
 }
 
 .slider{
+    display: block;
     top: 0;
     left: 0;
     position: relative;
-    margin: 15px;
+    margin-top: 15px;
     box-shadow: inset 0 0 0 0 #0011AB;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid #0011AB;
-    width: 48%;
-    height: 500px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-top: 2px solid #0011AB;
+    border-bottom: 2px solid #0011AB;
+    width: 100%;
+    height: 600px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 25px;
     transition: all ease-out 0.3s;
 }
 
 .slides{
     width: 500%;
-    height: 500px;
+    height: 600px;
     display: flex;
     transition: all ease-out 0.3s;
 }
@@ -285,13 +285,14 @@ input{
     transition: 2s ease-in-out;
 }
 .slide img{
+    cursor: pointer;
     width: 100%;
-    height: 440px;
+    height: 540px;
     mask-border: var(--primary);
     transition: all ease-out 0.3s;
 }
 .navigation-manual{
-    box-shadow: 0 0 5px 30px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 3px 8px 30px rgba(255, 255, 255, 0.8);
     position: absolute;
     width: 100%;
     margin-top: -40px;
@@ -332,12 +333,12 @@ input{
 }
 
 .navigation-auto{
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 560px;
     transition: all ease-out 0.3s;
 }
 
@@ -368,20 +369,19 @@ input{
     background: #0011AB;
 }
 
-.news{
+.internshipsbox{
     top: 0;
-    right: 0;
-    width: 48%;
+    left: 0;
     position: relative;
-    margin: 15px;
+    display: block;
     box-shadow: inset 0 0 0 0 #0011AB;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid #0011AB;
-    height: 500px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-bottom: 2px solid #0011AB;
+    width: 100%;
+    height: 600px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 25px;
     transition: all ease-out 0.3s;
 }
 
@@ -396,7 +396,7 @@ footer{
     z-index: 99;
     padding: 32px 32px;
 
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px 25px 0px 0px;
 }
@@ -452,6 +452,33 @@ footer{
 
 @media (max-width: 1400px){
     .slider{
+        height: 500px;
+        transition: all ease-out 0.3s;
+    }
+    .slides{
+        height: 500px;
+        transition: all ease-out 0.3s;
+    }
+    .slide img{
+        height: 440px;
+        transition: all ease-out 0.3s;
+    }
+    .navigation-auto{
+        margin-top: 460px;
+        transition: all ease-out 0.3s;
+    }
+    .navigation-manual{
+        margin-top: -40px;
+        transition: all ease-out 0.3s;
+    }
+    .news{
+        height: 500px;
+        transition: all ease-out 0.3s;
+    }
+}
+
+@media (max-width: 1100px){
+    .slider{
         height: 400px;
         transition: all ease-out 0.3s;
     }
@@ -473,33 +500,6 @@ footer{
     }
     .news{
         height: 400px;
-        transition: all ease-out 0.3s;
-    }
-}
-
-@media (max-width: 1100px){
-    .slider{
-        height: 300px;
-        transition: all ease-out 0.3s;
-    }
-    .slides{
-        height: 300px;
-        transition: all ease-out 0.3s;
-    }
-    .slide img{
-        height: 240px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-auto{
-        margin-top: 260px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-manual{
-        margin-top: -40px;
-        transition: all ease-out 0.3s;
-    }
-    .news{
-        height: 300px;
         transition: all ease-out 0.3s;
     }
 }

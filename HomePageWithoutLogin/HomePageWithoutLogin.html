@@ -25,28 +25,28 @@
   </div>
   <div class="mainbox">
     <form action="SearchGo" method="get" class="searchbox">
-      <input type="text" id="course" name="q" class="searchinput" placeholder="Search Intership" autofocus required/>
-      <input type="reset" class="searchreset" value=""/>
-      <input type="submit" class="searchsubmit" value=""/>
+      <input type="text" id="course" class="searchinput" placeholder="Search Intership" autofocus required/>
+      <input type="reset" id="reset" class="searchreset" value=""/>
+      <input type="submit" id="submit" class="searchsubmit" value=""/>
     </form>
     <div class="contentbox">
       <div class="slider">
         <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" onclick="sendid(this.id)">
-          <input type="radio" name="radio-btn" id="radio2" onclick="sendid(this.id)">
-          <input type="radio" name="radio-btn" id="radio3" onclick="sendid(this.id)">
-          <input type="radio" name="radio-btn" id="radio4" onclick="sendid(this.id)">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
             <div class="slide first">
-              <img src="Overall-Internship-Program-2022.png" alt="Overall Internship Program">
+              <img id="tags1" src="Overall-Internship-Program-2022.png" alt="Overall Internship Program">
             </div>
             <div class="slide">
-              <img src="Microsoft-Internship-Program-2022.png" alt="Microsoft Internship Program">
+              <img id="tags2" src="Microsoft-Internship-Program-2022.png" alt="Microsoft Internship Program">
             </div>
             <div class="slide">
-              <img src="Tesla-Internship-Program-2022.png" alt="Tesla Internship Program">
+              <img id="tags3" src="Tesla-Internship-Program-2022.png" alt="Tesla Internship Program">
             </div>
             <div class="slide">
-              <img src="Nestle-Internship-Program-2022.png" alt="Nestle Internship Program">
+              <img id="tags4" src="Nestle-Internship-Program-2022.png" alt="Nestle Internship Program">
             </div>
           <div class="navigation-auto">
             <div class="auto-btn1"></div>
@@ -62,13 +62,26 @@
           <label for="radio4" class="manual-btn"></label>
         </div>
       </div>
-      <div class="news">
-        <h2>Recent News About Internships</h2>
-        <ul>
-          <li><span>1</span> Gay ass Man requesting to join Gay agendas</li>
-          <li><span>1</span> Gay ass Man requesting to join Gay agendas</li>
-          <li><span>1</span> Gay ass Man requesting to join Gay agendas</li>
-          <li><span>1</span> Gay ass Man requesting to join Gay agendas</li>
+      <div class="internshipsbox">
+        <ul class="internships">
+          <li>
+            <div class="intern">
+              <h2>Software Engineer</h2>
+              Redmond, Washington, United States
+              Requirements:
+              <ul>
+                <li>
+                  3+ years of experience in writing SQL, COSMOS, and/or Python
+                </li>
+                <li>
+                  3+ years of experience advanced data modeling within Power BI
+                </li>
+                <li>
+                  3+ years of experience defining, building, releasing, and evangelizing Power BI based solutions
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
