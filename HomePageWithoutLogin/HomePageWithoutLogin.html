@@ -11,24 +11,52 @@
     <title>Document</title>
 </head>
 <body>
+  <!-- Headerbox -->
   <header>
-    <nav>
       <div class="ctn">
           <h3 class="title">Kivi</h3>
           <div class="title-box">An OJT Website for Students and Companies</div>
-          <a href="/HomePageWithoutLogin/" class="btstyle">Login</a>
+          <a href="/LoginPage/LoginPage.html" class="btstyle">Login</a>
       </div>
-    </nav>
   </header>
+  <!-- End of Headerbox -->
+
+  <!-- Quotebox -->
   <div class="aquote">
           Choose a job you love, and you will never have to work a day in your life<br>-Confucius-
   </div>
+  <!-- End of Quotebox -->
+
+  <!-- Mainbox -->
   <div class="mainbox">
+
+    <!-- Searchbox input -->
     <form action="SearchGo" method="get" class="searchbox">
-      <input type="text" id="course" class="searchinput" placeholder="Search Intership" autofocus required/>
-      <input type="reset" id="reset" class="searchreset" value=""/>
-      <input type="submit" id="submit" class="searchsubmit" value=""/>
+
+      <!-- Tagsbox -->
+      <!-- <ul class="alltags">
+        <li class="year">2022 <span class="deletetag"></span></li>
+        <li class="major">SE <i class="deletetag"></i></li>
+        <li class="major">AI <i class="deletetag"></i></li>
+        <li class="major">IS <i class="deletetag"></i></li>
+        <li class="company">Microsoft <i class="deletetag"></i></li>
+        <li class="company">Tesla <i class="deletetag"></i></li>
+        <li class="company">Nestle <i class="deletetag"></i></li>
+        <li class="codelang">Python <i class="deletetag"></i></li>
+        <li class="codelang">SQL <i class="deletetag"></i></li>
+        <li class="codelang">PowerBI <i class="deletetag"></i></li>
+        <li class="codelang">Azure <i class="deletetag"></i></li>
+        <li class="codelang">COSMOS <i class="deletetag"></i></li>
+      </ul> -->
+    <!-- End of Tagsbox -->
+
+      <input type="text" id="course" class="searchinput" placeholder="Search Intership" autofocus required=""/>
+      <input type="reset" class="searchreset" value=""/>
+      <input type="submit" class="searchsubmit" value=""/>
     </form>
+    <!-- End of Searchbox input -->
+
+    <!-- Slider -->
     <div class="contentbox">
       <div class="slider">
         <div class="slides">
@@ -37,16 +65,16 @@
           <input type="radio" name="radio-btn" id="radio3">
           <input type="radio" name="radio-btn" id="radio4">
             <div class="slide first">
-              <img id="tags1" src="Overall-Internship-Program-2022.png" alt="Overall Internship Program">
+              <img id="sponsortags1" src="/PictureCollection/Overall-Internship-Program-2022.png" alt="Overall Internship Program">
             </div>
             <div class="slide">
-              <img id="tags2" src="Microsoft-Internship-Program-2022.png" alt="Microsoft Internship Program">
+              <img id="sponsortags2" src="/PictureCollection/Microsoft-Internship-Program-2022.png" alt="Microsoft Internship Program">
             </div>
             <div class="slide">
-              <img id="tags3" src="Tesla-Internship-Program-2022.png" alt="Tesla Internship Program">
+              <img id="sponsortags3" src="/PictureCollection/Tesla-Internship-Program-2022.png" alt="Tesla Internship Program">
             </div>
             <div class="slide">
-              <img id="tags4" src="Nestle-Internship-Program-2022.png" alt="Nestle Internship Program">
+              <img id="sponsortags4" src="/PictureCollection/Nestle-Internship-Program-2022.png" alt="Nestle Internship Program">
             </div>
           <div class="navigation-auto">
             <div class="auto-btn1"></div>
@@ -62,14 +90,20 @@
           <label for="radio4" class="manual-btn"></label>
         </div>
       </div>
+      <!-- End of Slider -->
+
+      <!--Internshipbox List-->
       <div class="internshipsbox">
         <ul class="internships">
-          <li>
-            <div class="intern">
+
+          <!-- First Internship -->
+          <li class="intern">
+            <img id="companylogo" src="/PictureCollection/Microsoft-Logo.png" alt="Microsoft Logo">
+            <div class="interndetail">
               <h2>Software Engineer</h2>
-              Redmond, Washington, United States
-              Requirements:
-              <ul>
+              <h3>Redmond, Washington, United States</h3>
+              <p>Requirements:</p>
+              <ul class="internrequirements">
                 <li>
                   3+ years of experience in writing SQL, COSMOS, and/or Python
                 </li>
@@ -79,13 +113,95 @@
                 <li>
                   3+ years of experience defining, building, releasing, and evangelizing Power BI based solutions
                 </li>
+                <li>
+                  ...
+                </li>
               </ul>
+              <ul class="interntagslist">
+                <li id="tagPLSQL">SQL</li>
+                <li id="tagPLPython">Python</li>
+                <li id="tagPLCOSMOS">COSMOS</li>
+                <li id="tagPLPowerBI">PowerBI</li>
+                <li id="tagPLAzure">Azure</li>
+              </ul>
+              <button type="submit" class="internfulldetail" id="internfulldetail">Detail</button>
             </div>
           </li>
+          <!-- End of First Internship -->
+          
+          <!-- Second Internship -->
+          <li class="intern">
+            <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
+            <div class="interndetail">
+              <h2 class="internName">Junior C# .Net Core Engineer</h2>
+              <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
+              <p>Requirements:</p>
+              <ul class="internrequirements">
+                <li>
+                  About 1 Year experience with C#, ASP.NET, MVC.
+                </li>
+                <li>
+                  ...
+                </li>
+              </ul>
+              <ul class="interntagslist">
+                <li id="tagPLC#">C#</li>
+                <li id="tagPLASP.NET">ASP.NET</li>
+                <li id="tagPLMVC">MVC</li>
+              </ul>
+              <button type="submit" class="internfulldetail" id="internfulldetail">Detail</button>
+            </div>
+          </li>
+          <!-- End of Second Internship -->
+
+          <!-- Third Internship -->
+          <li class="intern">
+            <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
+            <div class="interndetail">
+              <h2 class="internName">Junior C# .Net Core Engineer</h2>
+              <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
+              <p>Requirements:</p>
+              <ul class="internrequirements">
+                <li>
+                  About 1 Year experience with C#, ASP.NET, MVC.
+                </li>
+                <li>
+                  ...
+                </li>
+              </ul>
+              <ul class="interntagslist">
+                <li id="tagPLC#">C#</li>
+                <li id="tagPLASP.NET">ASP.NET</li>
+                <li id="tagPLMVC">MVC</li>
+              </ul>
+              <button type="submit" class="internfulldetail" id="internfulldetail">Detail</button>
+            </div>
+          </li>
+          <!-- End of Third Internship -->
+
         </ul>
       </div>
+      <!-- End of Internshipbox List -->
+
+      <!-- PageNumberbox -->
+      <ul class="pagenumberlist">
+        <li id="pagefirst"><<</li>
+        <li id="pageprevious"><</li>
+        <li id="pagenumbers">1</li>
+        <li id="pagenumbers">2</li>
+        <li id="pagenumbers">3</li>
+        <li id="pagenumbers">4</li>
+        <li id="pagenumbers">5</li>
+        <li id="pagenext">></li>
+        <li id="pagelast">>></li>
+      </ul>
+      <!-- End of PageNumberbox -->
+
     </div>
   </div>
+  <!-- End of Mainbox -->
+
+  <!-- Footerbox -->
   <footer>
       <div class="credits">
         KiVi OJT Website
@@ -98,5 +214,7 @@
         </a>
       </div>
   </footer>
+  <!-- End of Footerbox -->
+
 </body>
 </html>

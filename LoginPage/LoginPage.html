@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="ctn">
+              <h3 class="title">Kivi</h3>
+              <div class="title-box">An OJT Website for Students and Companies</div>
+              <a href="/LoginPage.html" class="btstyle">Login</a>
+          </div>
+        </nav>
+    </header>
+    <div class="aquote">
+            Choose a job you love, and you will never have to work a day in your life<br>-Confucius-
+    </div>
+
+    <div class="login-title"><h2>Login</h2></div>
+    <div class="login-container">
+        <form id="form_id" method="post" name="myform">
+            <label>Email:</label>
+            <input type="text" name="username" id="username"/>
+            <label>Password :</label>
+            <input type="password" name="password" id="password"/>
+        </form>
+            <p><a href="#">Forgot Password?</a></p>
+            <p>An Employer new to this site?<a href="#Contactus">Contact Us</a></p>
+            <input type="button" value="Login" id="submit" onclick="validate()"/>
+            <p>Or Login with</p>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+    
+    <footer>
+        <div class="credits">
+            KiVi OJT Website
+            <br>
+            Contact:  KiViNhanh247@gmail.com
+            <br>
+            IT/Tech Support: 0128132923
+            <a href="https://pngtree.com/freepng/blue-fresh-2-5d-job-search-interview-illustration_4213257.html">
+            BG by 千图网
+            </a>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
