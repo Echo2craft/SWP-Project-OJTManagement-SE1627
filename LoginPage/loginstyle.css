@@ -25,12 +25,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100%;
-    background-image: url(https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ecZHtPO5zLgAX-aPZDh&_nc_ht=scontent.fsgn5-2.fna&oh=03_AVLJG16_eNHG6TnMUPW-mPzOksXZUjs8f_1KG-iLwJPi4w&oe=62C18BED);
+    background-image: url(https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=IN1eO-gMCgAAX8iaz-d&_nc_ht=scontent.fsgn13-4.fna&oh=03_AVJ_YtUpYVgWPqgrf0Skc9kPWxqTmVaJ5akHxJkuIf_z3g&oe=62E918ED);
     background-repeat: no-repeat;
     background-size:cover;
 }
-
-nav{
+/*CSS Header*/
+header{
     border-bottom: 3px solid var(--primary);
     top: 0;
     left: 0;
@@ -48,7 +48,6 @@ nav{
     width: auto;
     height: auto;
     align-items: center;
-    justify-content: flex-start;
     margin: 0 auto;
 }
 
@@ -61,7 +60,8 @@ nav{
 }
 
 .title-box{
-    margin-left: 10px;
+    margin-top: 12px;
+    margin-left: 5px;
     margin-right: auto;
     font-style: normal;
     font-weight: 200;
@@ -73,7 +73,6 @@ nav{
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    min-width: fit-content;
     word-wrap: nowrap;
     overflow: hidden;
     padding: 0 25px;
@@ -87,8 +86,8 @@ nav{
     color: #000000;
     transition: ease-out 0.3s;
     position: relative;
-    background: url(heroicons-outline_login.png) -100% 50% no-repeat;
-    
+    background: url(/IconCollection/heroicons-outline_home.png) -100% 50% no-repeat;
+
     /* background: #FFFEFE; */
     border: 2px solid #0011AB;
     border-radius: 25px;
@@ -99,16 +98,18 @@ nav{
 .btstyle:hover, .btstyle:focus{
     word-wrap: nowrap;
     overflow: hidden;
-    background: url(heroicons-outline_login_active.png) -100% 50% no-repeat;
+    background: url(/IconCollection/heroicons-outline_home_active.png) -100% 50% no-repeat;
 
     color: #FFFEFE;
     background-color: #0011AB;
     border: 2px solid #0011AB;
     border-radius: 33px;
 }
+/*End of CSS Header*/
 
+/*CSS Quote*/
 .aquote{
-    margin: 0px 50px;
+    margin: 10px 50px;
     display: flex;
     justify-content: center;
     min-width: 50%;
@@ -122,65 +123,214 @@ nav{
     text-align: center;
     transition: ease-out 0.3s;
 }
-div.login-title{
-    margin-top: 15px;
-    margin-left:770px;
-    font-size: 30px;
-}
-div.login-container{
-    width:420px;
-    height:450px;
-    padding: 10px 50px 450px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    margin-top:20px;
-    text-align: center;
-    margin-left: 620px;
-    background: rgba(255, 255, 255, 0.75);
+/*End of CSS Quote*/
+
+/*CSS Mainbox*/
+.mainbox{
+    position: relative;
+    width: 400px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0px;
+    transition: all 0.3s ease-in-out;
+
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-input[type=text],input[type=password]{
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    margin-bottom: 25px;
-    margin-top: 5px;
-    border: 2px solid #ccc;
-    color: #4f4f4f;
-    font-size: 10px;
     border-radius: 25px;
-    }
-div.login-container>form.form-id>label{
-    color: #464646;
-    text-shadow: 0 1px 0 #fff;
-    font-size: 14px;
-    font-weight: bold;
 }
-input[type=button]{
-    height:30px;
-    width:80px;
-    padding: 0;
-    font-size:15px;
+/*End of CSS Mainbox*/
+
+.verifybox{
+    margin: 0 30px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    background-color: #00000000;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.verifybox input[type="tel"]{
+    margin: 0;
+    order: 1;
+    padding-right: 0;
+    display: block;
+    outline: none;
+    background-color: #00000000;
+    appearance: none;
     text-align: center;
-    display: table-cell;
+    font-weight: 400;
+    font-size: 15px;
+    border-right: 0;
+    z-index: 1;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    transition: all 0.3s ease-in;
+    border-right: #00000000;
+    width: 100%;
 }
-div.login-container>p{
+.verifybox .sendcodebutton{
+        margin:0;
+        right: 0;
+        position: relative;
+        order: 2;
+        width: 68px;
+        cursor: pointer;
+        align-self: flex-end;
+        background: url(/IconCollection/SWPProject-Sendcode.png) 70% 50% no-repeat;
+        
+        /* background: #FFFEFE; */
+        border-left: 0;
+        border-radius: 0px 25px 25px 0px;
+        transition: all 0.3s ease-out;
+}
+.verifybox .sendcodebutton:focus, .verifybox .sendcodebutton:hover{
+    cursor: pointer;
+    background: url(/IconCollection/SWPProject-Sendcode_active.png) 60% 50% no-repeat;
+    
+    /* background: #FFFEFE; */
+    border-left: 0;
+    border-radius: 0px 25px 25px 0px;
+    transition: all 0.3s ease-out;
+}
+
+
+
+.logintitle{
+    width: auto;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.mainbox form{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.forgotpwlink{
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-out;
+}
+.forgotpwlink:hover,.forgotpwlink:focus{
+    background-color: #0011AB;
+    color: #FFFEFE;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+    transition: all 0.3s ease-out;
+}
+
+.supportbtn{
+    width: fit-content;
+    display: block;
+    padding: 10px;
+    margin: auto;
     margin-top: 5px;
-    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-out;
 }
-div.g-signin2{
-   margin-left: 100px;
-   height: 150px;
+.supportbtn:hover, .supportbtn:focus{
+    background-color: #0011AB;
+
+    color: #FFFEFE;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+    transition: all 0.3s ease-out;
 }
+
+.inputinfo{
+    position: relative;
+    display: block;
+    width: 336px;
+    height: 54px;
+    margin: 15px 30px;
+    padding: 0px 20px;
+    appearance: none;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    background-color: #00000000;
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+}
+
+.inputinfo::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.3;
+}
+input:focus {
+    outline-color: #0011AB;
+}
+
+input[type=button]{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    width: 120px;
+    height: 54px;
+    padding: 0 24px;
+    text-align: center;
+    margin: 0 140px;
+    appearance: none;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    transition: all 0.3s ease-out;
+}
+
+input[type=button]:hover, input[type=button]:focus{
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+    transition: all 0.3s ease-out;
+}
+
+.support{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+}
+
+.googlelog{
+    width: 100%;
+    display: block;
+    margin: 20px;
+    text-align: center;
+}
+.g-signin2{
+    margin: 0 0 20px 0;
+    display: block;
+}
+
+/*CSS for Footer*/
 footer{
     clear: both;
     position: relative;
     margin-top: 100px;
     border-top: 3px solid var(--primary);
     bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
+    width: 100%;
     padding: 32px 32px;
 
     background: rgba(255, 255, 255, 0.25);
@@ -224,7 +374,8 @@ footer{
     opacity: 0;
     content: "";
     border-radius: 33px;
-    background-image: url(https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ecZHtPO5zLgAX-aPZDh&_nc_ht=scontent.fsgn5-2.fna&oh=03_AVLJG16_eNHG6TnMUPW-mPzOksXZUjs8f_1KG-iLwJPi4w&oe=62C18BED);
+    background-image: 
+    url(https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=IN1eO-gMCgAAX8iaz-d&_nc_ht=scontent.fsgn13-4.fna&oh=03_AVJ_YtUpYVgWPqgrf0Skc9kPWxqTmVaJ5akHxJkuIf_z3g&oe=62E918ED);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -236,114 +387,21 @@ footer{
     opacity: 1;
     z-index: -1;
 }
-.buttonIn{
-    position: relative;
-    margin-bottom: 15px;
-}
-div.buttonIn>input{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height:40px;
-    border-radius: 25px;
-}
-div.buttonIn>button{
-    position: absolute;
-    top: 0;
-    border-radius: 25px;
-    right: 0px;
-    z-index: 2;
-    top: 2px;
-    height:40px;
-    cursor: pointer;
-}
+/*End of CSS footer*/
+
+
 @media (max-width: 1400px){
-    .slider{
-        height: 500px;
-        transition: all ease-out 0.3s;
-    }
-    .slides{
-        height: 500px;
-        transition: all ease-out 0.3s;
-    }
-    .slide img{
-        height: 440px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-auto{
-        margin-top: 460px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-manual{
-        margin-top: -40px;
-        transition: all ease-out 0.3s;
-    }
-    .news{
-        height: 500px;
-        transition: all ease-out 0.3s;
-    }
+    
 }
 
 @media (max-width: 1100px){
-    .slider{
-        height: 400px;
-        transition: all ease-out 0.3s;
-    }
-    .slides{
-        height: 400px;
-        transition: all ease-out 0.3s;
-    }
-    .slide img{
-        height: 340px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-auto{
-        margin-top: 360px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-manual{
-        margin-top: -40px;
-        transition: all ease-out 0.3s;
-    }
-    .news{
-        height: 400px;
-        transition: all ease-out 0.3s;
-    }
+    
 }
 
 @media (max-width: 800px) {
-    .mainbox{
-        margin: 0 50px;
-    }
     .contentbox{
         justify-content: center;
         display: block;
-    }
-    .slider{
-        width: auto;
-        height: 300px;
-        transition: all ease-out 0.3s;
-    }
-    .slides{
-        height: 300px;
-        transition: all ease-out 0.3s;
-    }
-    .slide img{
-        height: 240px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-auto{
-        margin-top: 260px;
-        transition: all ease-out 0.3s;
-    }
-    .navigation-manual{
-        margin-top: -40px;
-        transition: all ease-out 0.3s;
-    }
-    .news{
-        width: auto;
-        height: 300px;
-        transition: all ease-out 0.3s;
     }
     .credits{
         text-align: left;
@@ -380,30 +438,22 @@ div.buttonIn>button{
         text-indent: 100%;
         word-wrap: nowrap;
         overflow: hidden;
-        min-width: fit-content;
+        min-width: max-content;
+        width: auto;
         padding: 0px;
 
-        background-size: auto;
-
-        background: url(/HomePageWithoutLogin/heroicons-outline_login.png) 40% 50% no-repeat;
+        background: url(/IconCollection/heroicons-outline_home.png) 52% 40% no-repeat;
         /* background: #FFFEFE; */
+        background-size: 60%;
         transition: ease-out 0.3s;
     }
-    .btstyle:hover{
+    .btstyle:hover, .btstyle:focus{
         text-indent: 100%;
         word-wrap: nowrap;
         overflow: hidden;
-        background-size: auto;
-        background-image: url(/HomePageWithoutLogin/heroicons-outline_login_active.png);
-        background-position: 60% 50%;
-    }
-    .btstyle:focus{
-        text-indent: 100%;
-        word-wrap: nowrap;
-        overflow: hidden;
-        background-size: auto;
-        background-image: url(/HomePageWithoutLogin/heroicons-outline_login_active.png);
-        background-position: 60% 50%;
+        background-size: 65%;
+        background-image: url(/IconCollection/heroicons-outline_home_active.png);
+        background-position: 52% 40%;
     }
     .credits{
         font-weight: 100;
