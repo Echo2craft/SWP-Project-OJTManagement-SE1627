@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CHPagecss.css">
+    <title>Company Certificate Page</title>
+</head>
+
+<body>
+    <!-- Headerbox -->
+    <header>
+        <div class="ctn">
+            <h3 class="title">Kivi</h3>
+            <div class="title-box">An OJT Website for Students and Companies</div>
+            <a href="/CompanyPage/CompanyAppliedCVPage.html" class="btstyleapplication">Application</a>
+            <a href="/CompanyPage/CompanyInternshipsPage.html" class="btstyleinternships">Internships</a>
+            <a href="/CompanyPage/CompanyHomePage.html" class="btstylehome">Home</a>
+            <a href="/HomePageWithoutLogin/HomePageWithoutLogin.html" class="btstylelogout">Logout</a>
+        </div>
+    </header>
+    <!-- End of Headerbox -->
+
+    <h2 class="logintitle">Certification Interns List</h2>
+
+    <div class="mainbox">
+        <!-- Searchbox input -->
+        <form action="SearchGo" method="get" class="searchbox">
+
+            <!-- Tagsbox -->
+            <!-- <ul class="alltags">
+            <li class="year">2022 <span class="deletetag"></span></li>
+            <li class="major">SE <i class="deletetag"></i></li>
+            <li class="major">AI <i class="deletetag"></i></li>
+            <li class="major">IS <i class="deletetag"></i></li>
+            <li class="company">Microsoft <i class="deletetag"></i></li>
+            <li class="company">Tesla <i class="deletetag"></i></li>
+            <li class="company">Nestle <i class="deletetag"></i></li>
+            <li class="codelang">Python <i class="deletetag"></i></li>
+            <li class="codelang">SQL <i class="deletetag"></i></li>
+            <li class="codelang">PowerBI <i class="deletetag"></i></li>
+            <li class="codelang">Azure <i class="deletetag"></i></li>
+            <li class="codelang">COSMOS <i class="deletetag"></i></li>
+          </ul> -->
+            <!-- End of Tagsbox -->
+
+            <input type="text" id="course" class="searchinput" placeholder="Search Intership" autofocus
+                required="" />
+            <input type="reset" class="searchreset" value="" />
+            <input type="submit" class="searchsubmit" value="" />
+        </form>
+        <!-- End of Searchbox input -->
+
+        <!--Internshipbox List-->
+        <div class="internshipsbox">
+            <ul class="internships">
+
+                <!-- First Internship -->
+                <li class="intern internfirst">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of First Internship -->
+
+                <!-- Second Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Second Internship -->
+
+                <!-- Third Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Third Internship -->
+
+                <!-- Third Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Third Internship -->
+
+                <!-- Third Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Third Internship -->
+
+                <!-- Third Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Third Internship -->
+
+                <!-- Third Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Third Internship -->
+
+                <!-- Third Internship -->
+                <li class="intern">
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Full Name
+                            <br>
+                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
+                                name="fullname" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Email
+                            <br>
+                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email"
+                                readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Internship
+                            <br>
+                            <input class="inputinfo" type="text" id="internship" placeholder="Internship"
+                                name="internship" readonly disabled />
+                        </div>
+                        <div class="form-element">
+                            Student Code
+                            <br>
+                            <input class="inputinfo" type="tel" id="student_id" placeholder="Student ID"
+                                name="student_id" readonly disabled />
+                        </div>
+                    </div>
+                    <div class="internsinforow">
+                        <div class="form-element">
+                            Status
+                            <br>
+                            <input class="inputinfo" type="url" id="status" placeholder="Status" name="status"
+                                readonly disabled/>
+                        </div>
+                        <a href="#" class="btstylechecklink">Add Certificate</a>
+                    </div>
+                    <div class="internsinforow">
+                        <img id="companylogo" src="/PictureCollection/fpt-logo.png" alt="Fpt Logo">
+                    </div>
+                </li>
+                <!-- End of Third Internship -->
+
+            </ul>
+        </div>
+        <!-- End of Internshipbox List -->
+
+        <!-- PageNumberbox -->
+        <ul class="pagenumberlist">
+            <li id="pagefirst">
+                << </li>
+            <li id="pageprevious">
+                < </li>
+            <li id="pagenumbers">1</li>
+            <li id="pagenumbers">2</li>
+            <li id="pagenumbers">3</li>
+            <li id="pagenumbers">4</li>
+            <li id="pagenumbers">5</li>
+            <li id="pagenext">></li>
+            <li id="pagelast">>></li>
+        </ul>
+        <!-- End of PageNumberbox -->
+    </div>
+                   
+    <!-- Footerbox -->
+    <footer>
+        <div class="credits">
+            KiVi OJT Website
+            <br>
+            Contact: KiViNhanh247@gmail.com
+            <br>
+            IT/Tech Support: 0128132923
+            <a href="https://pngtree.com/freepng/blue-fresh-2-5d-job-search-interview-illustration_4213257.html">
+                BG by 千图网
+            </a>
+        </div>
+    </footer>
+    <!-- End of Footerbox -->
+
+</body>
+
+</html>

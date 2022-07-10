@@ -24,7 +24,7 @@ body{
     position: relative;
     justify-content: center;
     align-items: center;
-    min-height:100%;
+    min-height:200%;
     background-image: 
     url(https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=IN1eO-gMCgAAX8iaz-d&_nc_ht=scontent.fsgn13-4.fna&oh=03_AVJ_YtUpYVgWPqgrf0Skc9kPWxqTmVaJ5akHxJkuIf_z3g&oe=62E918ED);
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body{
 /*CSS Header*/
 header{
     border-bottom: 3px solid var(--primary);
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 32px 32px;
     
@@ -77,11 +77,10 @@ header{
 }
 
 .btstyle{
+    text-align: center;
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    word-wrap: nowrap;
-    overflow: hidden;
     padding: 0 25px;
     line-height: 2.5;
     height: 54px;
@@ -93,24 +92,115 @@ header{
     color: #000000;
     transition: ease-out 0.3s;
     position: relative;
-    background: url(/IconCollection/heroicons-outline_login.png) -100% 50% no-repeat;
-    
+    background: url(/IconCollection/heroicons-outline_home.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+}
+
+.btstyle:hover, .btstyle:focus{
+    background: url(/IconCollection/heroicons-outline_home_active.png) -100% 50% no-repeat;
+
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+.btstylehome{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    transition: ease-out 0.3s;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_home.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+}
+
+.btstylehome:hover, .btstylehome:focus{
+    background: url(/IconCollection/heroicons-outline_home_active.png) -100% 50% no-repeat;
+
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+
+.btstylelogout{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_logout.png) -100% 50% no-repeat;
+
     /* background: #FFFEFE; */
     border: 2px solid #0011AB;
     border-radius: 25px;
     box-shadow: inset 0 0 0 0 #0011AB;
     transition: ease-out 0.3s;
 }
-
-.btstyle:hover, .btstyle:focus{
-    word-wrap: nowrap;
-    overflow: hidden;
-    background: url(/IconCollection/heroicons-outline_login_active.png) -100% 50% no-repeat;
-
+.btstylelogout:hover,.btstylelogout:focus{
+    background: url(/IconCollection/heroicons-outline_logout_active.png) -100% 50% no-repeat;
     color: #FFFEFE;
     background-color: #0011AB;
     border: 2px solid #0011AB;
     border-radius: 33px;
+}
+.btstyleapplication{
+    text-decoration: none;
+    display: block;
+    overflow: visible;
+    overflow-wrap: normal;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_clipboard-list.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+.btstyleapplication:hover,.btstyleapplication:focus{
+    background: url(/IconCollection/heroicons-outline_clipboard-list_active.png) -100% 50% no-repeat;
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+    transition: ease-out 0.3s;
 }
 /*End of CSS Header*/
 
@@ -131,6 +221,18 @@ header{
     transition: ease-out 0.3s;
 }
 /*End of CSS Quote*/
+
+.logintitle{
+    width: auto;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
 
 /*CSS Mainbox*/
 .mainbox{
@@ -161,6 +263,7 @@ form{
     background-color: #00000000;
     justify-content: center;
     border-radius: 25px;
+    margin-bottom: 15px;
 }
 
 input{
@@ -510,6 +613,10 @@ footer{
     transition: all 0.3s ease-out;
 }
 
+.intern.internfirst{
+    border-top: 2px solid #0011AB;
+}
+
 .interndetail{
     position: relative;
     width: 100%;
@@ -565,6 +672,8 @@ footer{
     margin-right: 20px;
 }
 .interndetailtoggle{
+    margin-top: auto;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -616,7 +725,7 @@ footer{
 }
 #popup.active .internrequirements{
     min-height:140px;
-    height:160px;
+    height:200px;
     max-height: auto;
     overflow-y: scroll;
     overflow: auto;
@@ -754,6 +863,7 @@ footer{
         transition: all ease-out 0.3s;
     }
     .intern{
+        background-color: #FFFEFE;
         display: flex;
         border-bottom: 2px solid #0011AB;
         height: auto;
@@ -908,6 +1018,22 @@ footer{
         width: 70%;
         transition: all 0.3s ease-out;
     }
+    .btstyle{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstylehome{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstylelogout{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstyleapplication{
+        overflow: hidden;
+        min-width: max-content;
+    }
 }
 
 @media (max-width: 710px){
@@ -941,30 +1067,93 @@ footer{
         padding: 10px;
         left: 50%;
     }
-}
-
-@media (max-width:610px) {
     .btstyle{
         text-indent: 100%;
-        word-wrap: nowrap;
         overflow: hidden;
-        min-width: fit-content;
+        min-width: max-content;
+        font-style: normal;
+        width: auto;
         padding: 0px;
+        font-size: 12px;
 
-        background-size: auto;
-
-        background: url(/IconCollection/heroicons-outline_login.png) 40% 50% no-repeat;
+        background: url(/IconCollection/heroicons-outline_user.png) 52% 40% no-repeat;
         /* background: #FFFEFE; */
+        background-size: 80%;
         transition: ease-out 0.3s;
     }
     .btstyle:hover, .btstyle:focus{
         text-indent: 100%;
-        word-wrap: nowrap;
         overflow: hidden;
-        background-size: auto;
-        background-image: url(/IconCollection/heroicons-outline_login_active.png);
-        background-position: 60% 50%;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_user_active.png);
+        background-position: 52% 40%;
     }
+    .btstylehome{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: max-content;
+        width: auto;
+        padding: 0px;
+
+        background: url(/IconCollection/heroicons-outline_home.png) 52% 40% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 60%;
+        transition: ease-out 0.3s;
+    }
+    .btstylehome:hover, .btstylehome:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 65%;
+        background-image: url(/IconCollection/heroicons-outline_home_active.png);
+        background-position: 52% 40%;
+    }
+    
+    .btstylelogout{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 15px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_logout.png) 52% 45% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 75%;
+        transition: ease-out 0.3s;
+    }
+    .btstylelogout:hover, .btstylelogout:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 75%;
+        background-image: url(/IconCollection/heroicons-outline_logout_active.png);
+        background-position: 72% 45%;
+    }
+
+    .btstyleapplication{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 9px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_clipboard-list.png) 52% 48% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 80%;
+        transition: ease-out 0.3s;
+    }
+    .btstyleapplication:hover, .btstyleapplication:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_clipboard-list_active.png);
+        background-position: 52% 48%;
+    }
+}
+
+@media (max-width:610px) {
     .credits{
         font-weight: 100;
         font-size: 11px;

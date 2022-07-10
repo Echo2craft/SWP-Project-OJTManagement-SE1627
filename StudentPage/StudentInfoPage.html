@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/StudentPage/StudentInfoPages.css">
+    <title>Student Information </title>
+</head>
+
+<body>
+    <!-- Headerbox -->
+    <header>
+        <div class="ctn">
+            <h3 class="title">Kivi</h3>
+            <div class="title-box">An OJT Website for Students and Companies</div>
+            <a href="/StudentPage/StudentApplicationCVPage.html" class="btstyleapplication">Application</a>
+            <a href="/StudentPage/StudentHomePage.html" class="btstyle">Home</a>
+            <a href="/HomePageWithoutLogin/HomePageWithoutLogin.html" class="btstylelogout">Logout</a>
+        </div>
+    </header>
+    <!-- End of Headerbox -->
+
+    <h2 class="logintitle">Your Info</h2>
+
+    <div class="mainbox">
+
+        <form action="/EditCVGo">
+            <div class="inforow">
+
+                <div class="form-element">
+                    Full Name
+                    <br>
+                    <input class="inputinfo" type="text" id="fullname" placeholder="Student Fullname"
+                        name="student_fullname" readonly="" disabled />
+                </div>
+
+                <div class="form-element">
+                    Email
+                    <br>
+                    <input class="inputinfo" type="email" id="email" placeholder="Email" name="email" readonly=""
+                        disabled />
+                </div>
+
+                <div class="form-element">
+                    Student Code
+                    <br>
+                    <input class="inputinfo" type="text" id="studentcode" placeholder="Student Code"
+                        name="student_id_number" readonly="" disabled />
+                </div>
+
+            </div>
+
+            <div class="inforow">
+                <div class="form-element">
+                    Phone number
+                    <br>
+                    <input type="tel" class="inputinfo" id="phonenumber" placeholder="Phone number" name="student_phone"
+                        readonly="" disabled />
+
+                </div>
+                <div class="form-element">
+                    Major
+                    <br>
+                    <input type="text" class="inputinfo" id="major" placeholder="Major" name="major_id" readonly=""
+                        disabled />
+                </div>
+                <div class="form-element">
+                    Semester
+                    <br>
+                    <input type="text" class="inputinfo" id="semester" placeholder="Semester" name="semester"
+                        readonly="" disabled />
+                </div>
+            </div>
+
+            <div class="bigbox">
+                Link CV
+                <br>
+                <input type="text" id="linkcv" class="inputinfo" placeholder="Your link CV here" name="resume"
+                    readonly="" disabled />
+                <input type="button" value="Edit CV" />
+            </div>
+
+            <div class="bigbox">
+                Certificate<br>
+                <input type="text" class="inputinfo" id="certificate" placeholder="Internship Certificate"
+                    name="certificate" readonly="" disabled />
+            </div>
+
+            <div class="bigbox">
+                Current Internship<br>
+                <input type="text" class="inputinfo" id="internship" placeholder="Link Internship" name="internship_id"
+                    readonly="" disabled />
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Footerbox -->
+    <footer>
+        <div class="credits">
+            KiVi OJT Website
+            <br>
+            Contact: KiViNhanh247@gmail.com
+            <br>
+            IT/Tech Support: 0128132923
+            <a href="https://pngtree.com/freepng/blue-fresh-2-5d-job-search-interview-illustration_4213257.html">
+                BG by 千图网
+            </a>
+        </div>
+    </footer>
+    <!-- End of Footerbox -->
+
+</body>
+</html>

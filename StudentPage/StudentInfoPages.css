@@ -36,7 +36,7 @@ header{
     left: 0;
     right: 0;
     z-index: 99;
-    padding: 32px 32px;
+    padding: 32px;
     
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -70,11 +70,10 @@ header{
 }
 
 .btstyle{
+    text-align: center;
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    word-wrap: nowrap;
-    overflow: hidden;
     padding: 0 25px;
     line-height: 2.5;
     height: 54px;
@@ -92,12 +91,9 @@ header{
     border: 2px solid #0011AB;
     border-radius: 25px;
     box-shadow: inset 0 0 0 0 #0011AB;
-    transition: ease-out 0.3s;
 }
 
 .btstyle:hover, .btstyle:focus{
-    word-wrap: nowrap;
-    overflow: hidden;
     background: url(/IconCollection/heroicons-outline_home_active.png) -100% 50% no-repeat;
 
     color: #FFFEFE;
@@ -105,7 +101,103 @@ header{
     border: 2px solid #0011AB;
     border-radius: 33px;
 }
+.btstylelogout{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    transition: ease-out 0.3s;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_logout.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+.btstylelogout:hover,.btstylelogout:focus{
+    background: url(/IconCollection/heroicons-outline_logout_active.png) -100% 50% no-repeat;
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+.btstyleapplication{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    transition: ease-out 0.3s;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_clipboard-list.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+.btstyleapplication:hover,.btstyleapplication:focus{
+    background: url(/IconCollection/heroicons-outline_clipboard-list_active.png) -100% 50% no-repeat;
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
 /*End of CSS Header*/
+
+/*CSS Quote*/
+.aquote{
+    margin: 10px 50px;
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    height: auto;
+
+    font-family: 'IM FELL Great Primer';
+    font-weight: 400;
+    font-size: 40px;
+    /* or 200% */
+    align-self: auto;
+    text-align: center;
+    transition: ease-out 0.3s;
+}
+/*End of CSS Quote*/
+
+/*CSS Mainbox*/
+.mainbox{
+    width: auto;
+    margin: 0 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0px;
+    transition: all 0.3s ease-in-out;
+
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+/*End of CSS Mainbox*/
 
 /* width */
 ::-webkit-scrollbar {
@@ -131,97 +223,12 @@ header{
     background: #0011ab; 
   }
 
-/*CSS Quote*/
-.aquote{
-    margin: 10px 50px;
-    display: flex;
-    justify-content: center;
-    min-width: 50%;
-    height: auto;
-
-    font-family: 'IM FELL Great Primer';
-    font-weight: 400;
-    font-size: 40px;
-    /* or 200% */
-    align-self: auto;
-    text-align: center;
-    transition: ease-out 0.3s;
-}
-/*End of CSS Quote*/
-
-/*CSS Mainbox*/
-.mainbox{
-    position: relative;
-    width: 400px;
-    height: auto;
-    display: flex;
-    margin: auto;
+.bigbox{
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 16px 0px;
-    transition: all 0.3s ease-in-out;
-
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
+    align-content: center;
+    margin: auto;
 }
-/*End of CSS Mainbox*/
-
-.verifybox{
-    margin: 0 30px;
-    width: 400px;
-    position: relative;
-    display: flex;
-    background-color: #00000000;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-.verifybox input[type="tel"]{
-    margin: 0;
-    order: 1;
-    padding-right: 0;
-    display: block;
-    outline: none;
-    background-color: #00000000;
-    appearance: none;
-    text-align: center;
-    font-weight: 400;
-    font-size: 15px;
-    border-right: 0;
-    z-index: 1;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    transition: all 0.3s ease-in;
-    border-right: #00000000;
-    width: 100%;
-}
-.verifybox .sendcodebutton{
-        margin:0;
-        right: 0;
-        position: relative;
-        order: 2;
-        width: 68px;
-        cursor: pointer;
-        align-self: flex-end;
-        background: url(/IconCollection/SWPProject-Sendcode.png) 70% 50% no-repeat;
-        
-        /* background: #FFFEFE; */
-        border-left: 0;
-        border-radius: 0px 25px 25px 0px;
-        transition: all 0.3s ease-out;
-}
-.verifybox .sendcodebutton:focus, .verifybox .sendcodebutton:hover{
-    cursor: pointer;
-    background: url(/IconCollection/SWPProject-Sendcode_active.png) 60% 50% no-repeat;
-    
-    /* background: #FFFEFE; */
-    border-left: 0;
-    border-radius: 0px 25px 25px 0px;
-    transition: all 0.3s ease-out;
-}
-
-
 
 .logintitle{
     width: auto;
@@ -239,52 +246,49 @@ header{
     position: relative;
     display: block;
     justify-content: center;
+    align-content: center;
     align-items: center;
     text-align: center;
 }
-
-.forgotpwlink{
-    padding: 10px;
-    margin-bottom: 5px;
+.inforow{
+    justify-content: center;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+.form-element{
     text-align: center;
-    border-radius: 25px;
-    transition: all 0.3s ease-out;
-}
-.forgotpwlink:hover,.forgotpwlink:focus{
-    background-color: #0011AB;
-    color: #FFFEFE;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 33px;
-    transition: all 0.3s ease-out;
-}
-
-.supportbtn{
-    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     display: block;
-    padding: 10px;
-    margin: auto;
-    margin-top: 5px;
-    text-align: center;
-    border-radius: 25px;
-    transition: all 0.3s ease-out;
-}
-.supportbtn:hover, .supportbtn:focus{
-    background-color: #0011AB;
-
-    color: #FFFEFE;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 33px;
-    transition: all 0.3s ease-out;
 }
 
-.inputinfo{
+.form-element .inputinfo{
     position: relative;
     display: block;
     width: 336px;
     height: 54px;
     margin: 15px 30px;
+    padding: 0px 20px;
+    appearance: none;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    background-color: #00000000;
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+}
+
+.bigbox .inputinfo{
+    position: relative;
+    display: block;
+    width: 336px;
+    height: 54px;
+    margin: 15px auto;
     padding: 0px 20px;
     appearance: none;
     text-align: center;
@@ -312,10 +316,11 @@ input[type=button]{
     height: 54px;
     padding: 0 24px;
     text-align: center;
-    margin: 0 140px;
+    cursor: pointer;
+    margin: 10px auto;
     appearance: none;
     box-shadow: inset 0 0 0 0 #0011AB;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.979);
     border: 2px solid #0011AB;
     border-radius: 25px;
     transition: all 0.3s ease-out;
@@ -323,29 +328,11 @@ input[type=button]{
 
 input[type=button]:hover, input[type=button]:focus{
     color: #FFFEFE;
+    cursor: pointer;
     background-color: #0011AB;
     border: 2px solid #0011AB;
     border-radius: 33px;
     transition: all 0.3s ease-out;
-}
-
-.support{
-    width: 100%;
-    position: relative;
-    align-items: center;
-    margin: 0px 20px 20px 20px;
-    text-align: center;
-}
-
-.googlelog{
-    width: 100%;
-    display: block;
-    margin: 20px;
-    text-align: center;
-}
-.g-signin2{
-    margin: 0 0 20px 0;
-    display: block;
 }
 
 /*CSS for Footer*/
@@ -433,11 +420,23 @@ footer{
         justify-content: flex-start;
         transition: all ease-in-out 0.3s;
     }
+    .btstyle{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstylelogout{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstyleapplication{
+        overflow: hidden;
+        min-width: max-content;
+    }
 }
 
 @media (max-width: 710px){
     .title-box{
-        margin-left: 20px;
+        margin-left: 5px;
         font-weight: 100;
         font-size: 15px;
         transition: linear 0.3s;
@@ -456,12 +455,8 @@ footer{
         padding: 16px 20px;
         height: 54px;
     }
-}
-
-@media (max-width:610px) {
     .btstyle{
         text-indent: 100%;
-        word-wrap: nowrap;
         overflow: hidden;
         min-width: max-content;
         width: auto;
@@ -474,11 +469,58 @@ footer{
     }
     .btstyle:hover, .btstyle:focus{
         text-indent: 100%;
-        word-wrap: nowrap;
         overflow: hidden;
         background-size: 65%;
         background-image: url(/IconCollection/heroicons-outline_home_active.png);
         background-position: 52% 40%;
+    }
+    .btstylelogout{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 15px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_logout.png) 52% 50% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 75%;
+        transition: ease-out 0.3s;
+    }
+    .btstylelogout:hover, .btstylelogout:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 75%;
+        background-image: url(/IconCollection/heroicons-outline_logout_active.png);
+        background-position: 72% 50%;
+    }
+    .btstyleapplication{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 9px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_clipboard-list.png) 52% 48% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 80%;
+        transition: ease-out 0.3s;
+    }
+    .btstyleapplication:hover, .btstyleapplication:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_clipboard-list_active.png);
+        background-position: 52% 48%;
+    }
+}
+
+@media (max-width:610px) {
+    .mainbox{
+        margin: 0 50px;
     }
     .credits{
         font-weight: 100;
@@ -488,5 +530,17 @@ footer{
     .credits a{
         padding: 16px 20px;
         height: 54px;
+    }
+    .form-element .inputinfo{
+        width: auto;
+        height: 54px;
+        margin: 15px 10px;
+        padding: 0px 10px;
+    }
+    .bigbox .inputinfo{
+        width: auto;
+        height: 54px;
+        margin: 15px auto;
+        padding: 0px 10px;
     }
 }

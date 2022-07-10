@@ -41,7 +41,7 @@ body{
 /*CSS Header*/
 header{
     border-bottom: 3px solid var(--primary);
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 32px 32px;
     
@@ -80,8 +80,67 @@ header{
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    word-wrap: nowrap;
-    overflow: hidden;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+
+.btstyle:hover, .btstyle:focus{
+
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+.btstylechecklink{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+
+.btstylechecklink:hover, .btstylechecklink:focus{
+
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+a.btstyle{
+    margin: 0;
+}
+.btstylehome{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
     padding: 0 25px;
     line-height: 2.5;
     height: 54px;
@@ -93,24 +152,140 @@ header{
     color: #000000;
     transition: ease-out 0.3s;
     position: relative;
-    background: url(/IconCollection/heroicons-outline_login.png) -100% 50% no-repeat;
-    
+    background: url(/IconCollection/heroicons-outline_home.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+}
+
+.btstylehome:hover, .btstylehome:focus{
+    background: url(/IconCollection/heroicons-outline_home_active.png) -100% 50% no-repeat;
+
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+.btstylelogout{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_logout.png) -100% 50% no-repeat;
+
     /* background: #FFFEFE; */
     border: 2px solid #0011AB;
     border-radius: 25px;
     box-shadow: inset 0 0 0 0 #0011AB;
     transition: ease-out 0.3s;
 }
-
-.btstyle:hover, .btstyle:focus{
-    word-wrap: nowrap;
-    overflow: hidden;
-    background: url(/IconCollection/heroicons-outline_login_active.png) -100% 50% no-repeat;
-
+.btstylelogout:hover,.btstylelogout:focus{
+    background: url(/IconCollection/heroicons-outline_logout_active.png) -100% 50% no-repeat;
     color: #FFFEFE;
     background-color: #0011AB;
     border: 2px solid #0011AB;
     border-radius: 33px;
+}
+.btstyleinternships{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_clipboard-list.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+.btstyleinternships:hover,.btstyleinternships:focus{
+    background: url(/IconCollection/heroicons-outline_clipboard-list_active.png) -100% 50% no-repeat;
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+.btstylecertificate{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_clipboard-list.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+.btstylecertificate:hover,.btstylecertificate:focus{
+    background: url(/IconCollection/heroicons-outline_clipboard-list_active.png) -100% 50% no-repeat;
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+}
+.btstyleapplication{
+    text-decoration: none;
+    display: block;
+    overflow: visible;
+    overflow-wrap: normal;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    background: url(/IconCollection/heroicons-outline_clipboard-list.png) -100% 50% no-repeat;
+
+    /* background: #FFFEFE; */
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+}
+.btstyleapplication:hover,.btstyleapplication:focus{
+    background: url(/IconCollection/heroicons-outline_clipboard-list_active.png) -100% 50% no-repeat;
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+    transition: ease-out 0.3s;
 }
 /*End of CSS Header*/
 
@@ -131,6 +306,18 @@ header{
     transition: ease-out 0.3s;
 }
 /*End of CSS Quote*/
+
+.logintitle{
+    width: auto;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
 
 /*CSS Mainbox*/
 .mainbox{
@@ -154,6 +341,35 @@ header{
 form{
     width: 100%;
 }
+.mainbox .companypack{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0 0 0;
+    background-color: #FFFEFE;
+    border-bottom: 2px solid #0011AB;
+    border-top: 2px solid #0011AB;
+}
+.companypack .company-logo{
+    width: 45%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: auto;
+}
+.companypack .companyrole-info{
+    justify-content: center;
+    align-items: center;
+}
+.company-logo img{
+    border-radius: 25px;
+    border: 2px solid #0011AB;
+    margin: 10% 0;
+}
 .searchbox{
     position: relative;
     width: 300px;
@@ -161,6 +377,14 @@ form{
     background-color: #00000000;
     justify-content: center;
     border-radius: 25px;
+    margin: 15px 0;
+}
+
+.inputinfo::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.3;
 }
 
 input{
@@ -495,19 +719,91 @@ footer{
   
 /*CSS for Intern*/
 .intern{
+    background: url(/PictureCollection/fpt-background.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    border-bottom: 2px solid #0011AB;
+    min-height: 310px;
+    height: auto;
+    justify-content: space-around;
+    width: 100%;
+}
+.internshipwork{
     background-color: #FFFEFE;
     display: flex;
     border-bottom: 2px solid #0011AB;
     min-height: 310px;
     height: auto;
+    justify-content: space-around;
     width: 100%;
 }
-.intern img{
+.internshipwork img{
     padding: 20px 40px;
     margin: auto;
     width:20%;
     height: auto;
     transition: all 0.3s ease-out;
+}
+.intern img{
+    padding: 0;
+    margin: auto;
+    height: auto;
+    transition: all 0.3s ease-out;
+}
+.inforow{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+.internsinforow{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease-out;
+}
+.form-element{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: 15px 15px;
+}
+
+.form-element .inputinfo{
+    position: relative;
+    display: block;
+    width: 256px;
+    height: 54px;
+    margin: 15px 0;
+    padding: 0px 20px;
+    appearance: none;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    background-color: #00000000;
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    transition: all 0.3s ease-out;
+}
+.intern.internfirst{
+    border-top: 2px solid #0011AB;
+}
+.internshipwork.internfirst{
+    border-top: 2px solid #0011AB;
 }
 
 .interndetail{
@@ -761,12 +1057,20 @@ footer{
         transition: all 0.3s ease-in-out;
         overflow: hidden;
     }
-    .intern img{
+    .internshipwork img{
         padding: auto;
         margin: auto;
         width:60%;
         height: fit-content;
         background-position: 50% 50%;
+        transition: all 0.3s ease-out;
+    }
+    .form-element .inputinfo{
+        width: 200px;
+    }
+    .intern img{
+        margin: auto;
+        height: fit-content;
         transition: all 0.3s ease-out;
     }
     .interntagslist{
@@ -827,12 +1131,23 @@ footer{
         transition: all ease-out 0.3s;
     }
     .intern{
+        display: flex;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        flex-direction: column-reverse;
+    }
+    .intern img{
+        margin: 15px 0;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .internshipwork{
         display: block;
         transition: all 0.3s ease-in-out;
         overflow: hidden;
 
     }
-    .intern img{
+    .internshipwork img{
         display: inline-block;
         padding: 0px 30%;
         width: 100%;
@@ -851,6 +1166,149 @@ footer{
     #popup div img{
         padding: 0 20%;
         transition: all 0.3s ease-out;
+    }
+    .btstyle{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstylehome{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstylelogout{
+        overflow: hidden;
+        min-width: max-content;
+    }
+    .btstyleapplication{
+        overflow: hidden;
+        min-width: max-content;
+    }
+}
+@media (max-width: 900px){
+    .btstyle{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: max-content;
+        font-style: normal;
+        width: auto;
+        padding: 0px;
+        font-size: 18px;
+        background: url(/IconCollection/heroicons-outline_user.png) 52% 40% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 80%;
+        transition: ease-out 0.3s;
+    }
+    .btstyle:hover, .btstyle:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_user_active.png);
+        background-position: 62% 40%;
+    }
+    .btstylehome{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: max-content;
+        width: auto;
+        padding: 0px;
+
+        background: url(/IconCollection/heroicons-outline_home.png) 52% 40% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 60%;
+        transition: ease-out 0.3s;
+    }
+    .btstylehome:hover, .btstylehome:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 65%;
+        background-image: url(/IconCollection/heroicons-outline_home_active.png);
+        background-position: 52% 40%;
+    }
+    
+    .btstylelogout{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 15px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_logout.png) 52% 48% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 75%;
+        transition: ease-out 0.3s;
+    }
+    .btstylelogout:hover, .btstylelogout:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 75%;
+        background-image: url(/IconCollection/heroicons-outline_logout_active.png);
+        background-position: 72% 48%;
+    }
+
+    .btstyleapplication{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 9px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_clipboard-list.png) 52% 48% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 80%;
+        transition: ease-out 0.3s;
+    }
+    .btstyleapplication:hover, .btstyleapplication:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_clipboard-list_active.png);
+        background-position: 52% 48%;
+    }
+    .btstylecertificate{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 9px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_certificates.png) 52% 48% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 80%;
+        transition: ease-out 0.3s;
+    }
+    .btstylecertificate:hover, .btstylecertificate:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_certificates_active.png);
+        background-position: 52% 48%;
+    }
+    .btstyleinternships{
+        text-indent: 100%;
+        overflow: hidden;
+        min-width: min-content;
+        font-style: normal;
+        font-size: 9px;
+        width: 0;
+        padding: 0;
+
+        background: url(/IconCollection/heroicons-outline_internships.png) 52% 48% no-repeat;
+        /* background: #FFFEFE; */
+        background-size: 80%;
+        transition: ease-out 0.3s;
+    }
+    .btstyleinternships:hover, .btstyleinternships:focus{
+        text-indent: 100%;
+        overflow: hidden;
+        background-size: 85%;
+        background-image: url(/IconCollection/heroicons-outline_internships_active.png);
+        background-position: 52% 58%;
     }
 }
 
@@ -944,26 +1402,9 @@ footer{
 }
 
 @media (max-width:610px) {
-    .btstyle{
-        text-indent: 100%;
-        word-wrap: nowrap;
-        overflow: hidden;
-        min-width: fit-content;
-        padding: 0px;
-
-        background-size: auto;
-
-        background: url(/IconCollection/heroicons-outline_login.png) 40% 50% no-repeat;
-        /* background: #FFFEFE; */
-        transition: ease-out 0.3s;
-    }
-    .btstyle:hover, .btstyle:focus{
-        text-indent: 100%;
-        word-wrap: nowrap;
-        overflow: hidden;
-        background-size: auto;
-        background-image: url(/IconCollection/heroicons-outline_login_active.png);
-        background-position: 60% 50%;
+    header{
+        padding: 20px;
+        transition: all 0.3s ease-out;
     }
     .credits{
         font-weight: 100;
