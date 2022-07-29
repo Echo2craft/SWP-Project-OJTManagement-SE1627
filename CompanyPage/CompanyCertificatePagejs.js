@@ -50,25 +50,27 @@ onload = () => {
         e.addEventListener('click', function () {
             var blur = document.querySelector('[id="blur"]');
             blur.classList.toggle('active');
-            var popup = document.querySelector('[id="popupcompany"]');
+            var popup = document.querySelector('[id="popup"]');
             // let clonedetail = e.parentNode.parentNode.cloneNode(true);
             // let clonebottomdiv = e.parentNode.cloneNode(true);
-            let cloneinternboard = e.parentNode.parentNode.parentNode.cloneNode(true);
-            let cloneimg = cloneinternboard.children[0];
-            let clonedetail = cloneinternboard.children[1];
-            let clonebottomdiv = clonedetail.children[4].children[0];
-            clonedetail.removeChild(cloneinternboard.children[1].children[4]);
-            clonedetail.appendChild(clonebottomdiv);
-            clonedetail.insertBefore(cloneimg, clonedetail.children[0]);
+            let cloneinternboard = e.parentNode.parentNode.cloneNode(true);
+            let cloneimg = cloneinternboard.children[3];
+            console.log(cloneimg);
 
-            popup.insertBefore(clonedetail, popup.children[0]);
+            cloneinternboard.children[2].removeChild(cloneinternboard.children[2].children[1]);
+            cloneinternboard.insertBefore(cloneimg, cloneinternboard.children[0]);
+            console.log(cloneinternboard);
+            
+            //clonedetail.appendChild(clonebottomdiv);
+
+            popup.insertBefore(cloneinternboard, popup.children[0]);
             popup.classList.toggle('active');
         });
     })
     document.querySelector('[id="toggleoff"]').addEventListener('click', function () {
         var blur = document.querySelector('[id="blur"]');
         blur.classList.toggle('active');
-        var popup = document.querySelector('[id="popupcompany"]');
+        var popup = document.querySelector('[id="popup"]');
         setTimeout(function () {
             popup.removeChild(popup.children[0]);
         }, 400)
@@ -85,15 +87,3 @@ onload = () => {
     /* End of JS Detail Button */
 };
 /* End of JS On Page Load */
-
-/* JS for Automatic Left to Right Slider after 5s delay*/
-setInterval(function () {
-    document.getElementById('radio' + counter).checked = true;
-    if (document.hasFocus()) {
-        counter++;
-    }
-    if (counter > 4) {
-        counter = 1;
-    };
-}, 5000);
-/* End of JS Slider */

@@ -97,8 +97,8 @@ onload = () => {
             let cloneinternboard = e.parentNode.parentNode.parentNode.cloneNode(true);
             let cloneimg = cloneinternboard.children[0];
             let clonedetail = cloneinternboard.children[1];
-            let clonebottomdiv = clonedetail.children[3].children[0];
-            clonedetail.removeChild(cloneinternboard.children[1].children[3]);
+            let clonebottomdiv = clonedetail.children[4].children[0];
+            clonedetail.removeChild(cloneinternboard.children[1].children[4]);
             clonedetail.appendChild(clonebottomdiv);
             clonedetail.insertBefore(cloneimg, clonedetail.children[0]);
 

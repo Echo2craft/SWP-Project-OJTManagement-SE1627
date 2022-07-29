@@ -29,6 +29,7 @@ body{
     url(https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=IN1eO-gMCgAAX8iaz-d&_nc_ht=scontent.fsgn13-4.fna&oh=03_AVJ_YtUpYVgWPqgrf0Skc9kPWxqTmVaJ5akHxJkuIf_z3g&oe=62E918ED);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: 50%;
 }
 .container{
     position: relative;
@@ -266,6 +267,107 @@ input{
     justify-content: space-between;
     align-items: stretch;
 }
+/*CSS DropDown Tags/JD/Major*/
+.bydefault{
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    width: 134px;
+    line-height: 2.5;
+    height: 54px;
+    margin-left: 20px;
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    transition: ease-out 0.3s;
+    position: relative;
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: ease-out 0.3s;
+    z-index: 1;
+}
+.btnSelect > .bydefault:focus{
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 2px 5px 0 #0011AB;
+}
+.bydefault:hover{
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border-radius: 33px;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: all 0.3s ease-out;
+}
+.btnSelect{
+    position: relative;
+}
+.btnSelectdropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 134px;
+    left: 20px;
+    text-decoration: none;
+    padding: 0 .50rem;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    background: #FFFEFE;
+
+    box-shadow: 0 2px 5px 0 #0011AB;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: opacity 0.15s ease-in-out, transform 0.2s ease-in-out;
+}
+.btnSelectdropdown li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    list-style: none;
+    height: 54px;
+    border: 2px solid #0011AB;
+    border-top: 0;
+    width: 134px;
+}
+.btnSelectdropdown li:last-child{
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+.btnSelect ul li #chooseFilter{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.btnSelect ul li:hover{
+    background-color: #0011AB;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.btnSelect ul li:hover #chooseFilter{
+    transition: all 0.3s ease-out;
+    color: #FFFEFE;
+}
+.btnSelect > .bydefault:focus + .btnSelectdropdown{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
 /*End of CSS Searchbox*/
 
 /*CSS Slider*/
@@ -492,7 +594,6 @@ footer{
     border-radius: 33px;
     background: #0011ab; 
   }
-  
 /*CSS for Intern*/
 .intern{
     background-color: #FFFEFE;
@@ -598,6 +699,7 @@ footer{
 #popup{
     position: fixed;
     padding: 30px;
+    width: 808px;
     left:50%;
     transform: translate(-50%,-50%);
     background-color: #FFFEFE;
@@ -638,11 +740,16 @@ footer{
     align-items: center;
 }
 #popup div .interntagslist{
+    margin: 5px auto;
     width: 100%;
+    display: flex;
+    flex-flow: wrap;
     min-height:20px;
-    height:50px;
-    max-height: auto;
+    height:54px;
     overflow-y: scroll;
+}
+#popup div .interntagslist li{
+    margin: 5px 5px;
 }
 #popup div .interntagslist li:nth-child(n+5):not(#tagMore){
     display: inline-block;
@@ -843,6 +950,9 @@ footer{
         width: 75%;
         transition: all 0.3s ease-out;
     }
+    #popup{
+        width: auto;
+    }
     #popup.active{
         margin: auto;
         padding: 10px;
@@ -940,6 +1050,15 @@ footer{
         margin: auto;
         padding: 10px;
         left: 50%;
+    }
+    .searchbox, .btnSelect{
+        margin: 10px;
+    }
+    .bydefault{
+        margin: 0;
+    }
+    .btnSelectdropdown{
+        left: 0;
     }
 }
 

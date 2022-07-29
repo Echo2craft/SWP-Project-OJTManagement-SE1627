@@ -42,6 +42,47 @@ onload = () => {
     })
     /* End of JS Tag names */
 
+    /* JS for Slider source: https://www.youtube.com/watch?v=0wvrlOyGlq0*/
+    const radiobox = document.querySelectorAll('[id^="radio"]');
+    // console.log(radiobox);
+    radiobox.forEach(radio => {
+        // console.log(typeof(parseInt(radio.id.slice(5))));
+        radio.addEventListener('click', function () {
+            return counter = parseInt(radio.id.slice(5));
+        });
+    })
+    /* End of JS Slider */
+    /* JS for Slider name: add slider tag names to SearchBox upon click */
+    document.getElementById('sponsortags1').addEventListener('click', function () {
+        if (text.value.length > 0) {
+            text.value += ' 2022';
+        } else {
+            text.value = '2022';
+        }
+    });
+    document.getElementById('sponsortags2').addEventListener('click', function () {
+        if (text.value.length > 0) {
+            text.value += ' Microsoft';
+        } else {
+            text.value = 'Microsoft';
+        }
+    });
+    document.getElementById('sponsortags3').addEventListener('click', function () {
+        if (text.value.length > 0) {
+            text.value += ' Tesla 2022';
+        } else {
+            text.value = 'Tesla 2022';
+        }
+    });
+    document.getElementById('sponsortags4').addEventListener('click', function () {
+        if (text.value.length > 0) {
+            text.value += ' Nestle 2022';
+        } else {
+            text.value = 'Nestle 2022';
+        }
+    });
+    /* End of JS Slider tag names */
+
     /* JS for Detail Button */
     // document.getElementById('internfulldetail').addEventListener('click',function(){
     //     window.location =''; //'/LoginPage/LoginPage.html';
@@ -50,10 +91,10 @@ onload = () => {
         e.addEventListener('click', function () {
             var blur = document.querySelector('[id="blur"]');
             blur.classList.toggle('active');
-            var popup = document.querySelector('[id="popupcompany"]');
+            var popup = document.querySelector('[id="popup"]');
             // let clonedetail = e.parentNode.parentNode.cloneNode(true);
             // let clonebottomdiv = e.parentNode.cloneNode(true);
-            let cloneinternboard = e.parentNode.parentNode.parentNode.cloneNode(true);
+            let cloneinternboard = e.parentNode.parentNode.parentNode.parentNode.cloneNode(true);
             let cloneimg = cloneinternboard.children[0];
             let clonedetail = cloneinternboard.children[1];
             let clonebottomdiv = clonedetail.children[4].children[0];
@@ -68,7 +109,7 @@ onload = () => {
     document.querySelector('[id="toggleoff"]').addEventListener('click', function () {
         var blur = document.querySelector('[id="blur"]');
         blur.classList.toggle('active');
-        var popup = document.querySelector('[id="popupcompany"]');
+        var popup = document.querySelector('[id="popup"]');
         setTimeout(function () {
             popup.removeChild(popup.children[0]);
         }, 400)

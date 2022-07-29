@@ -28,6 +28,7 @@ body{
     background-image: url(https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.15752-9/283440721_499352225313703_1843083441579281092_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=IN1eO-gMCgAAX8iaz-d&_nc_ht=scontent.fsgn13-4.fna&oh=03_AVJ_YtUpYVgWPqgrf0Skc9kPWxqTmVaJ5akHxJkuIf_z3g&oe=62E918ED);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: 50%;
 }
 /*CSS Header*/
 header{
@@ -334,6 +335,104 @@ input[type=button]:hover, input[type=button]:focus{
     border-radius: 33px;
     transition: all 0.3s ease-out;
 }
+
+/*CSS Internshipbox */
+.internshipsbox{
+    top: 0;
+    position: relative;
+    display: block;
+    box-shadow: inset 0 0 0 0 #0011AB;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: auto;
+    margin: 20px 30px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all ease-out 0.3s;
+}
+.intern{
+    background-color: #FFFEFE;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    min-height: 310px;
+    height: auto;
+}
+.intern img{
+    padding: 20px 40px;
+    margin: auto;
+    width:auto;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease-out;
+}
+.interndetail{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+}
+.internrequirements{
+    padding: 0 50px;
+}
+.internrequirements li{
+    text-align: left;
+    padding: 0px 0px;
+    margin-bottom: 1%;
+}
+.interntagslist{
+    position: relative;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    margin: 1% auto 0 0;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.interntagslist li{
+    height: fit-content;
+    width: min-content;
+    background: rgba(255, 254, 254, 0.75);
+    border: 2px solid #0011AB;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    transition: all 0.3s ease-out;
+}
+
+.interntagslist li:hover, .interntagslist li:focus{
+    color: #FFFEFE;
+    background-color: #0011AB;
+    border: 2px solid #0011AB;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.interntagslist li:not(:last-child){
+    margin-right: 10px;
+}
+.interndetailtoggle{
+    overflow-wrap: normal;
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.interntogglebuttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*End of CSS Internshipbox */
 
 /*CSS for Footer*/
 footer{

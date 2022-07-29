@@ -13,6 +13,18 @@ onload = () => {
     //console.log(tagMore);
     /* JS for Tag names: add Tag names to SearchBox upon click */
     const PLname = document.querySelectorAll('[id^="tagPL"]');
+    /*JS DropDown Tags/JD/Major*/
+    var currentselection = document.getElementById('selectbutton');
+    const buttonFilter = document.querySelectorAll('[id="chooseFilter"]');
+
+    buttonFilter.forEach(choose => {
+        choose.addEventListener("click", () => {
+            let savebox = currentselection.innerHTML;
+            currentselection.innerHTML = choose.innerHTML;
+            choose.innerHTML = savebox;
+        },false);
+    });
+    /* End of DropDown Tags/JD/Major*/
     // console.log(radiobox);
     PLname.forEach(PLtagname => {
         // console.log(typeof(parseInt(radio.id.slice(5))));
@@ -97,15 +109,15 @@ onload = () => {
             let cloneinternboard = e.parentNode.parentNode.parentNode.cloneNode(true);
             let cloneimg = cloneinternboard.children[0];
             let clonedetail = cloneinternboard.children[1];
-            let clonebottomdiv = clonedetail.children[3].children[0];
-            clonedetail.removeChild(cloneinternboard.children[1].children[3]);
+            let clonebottomdiv = clonedetail.children[4].children[0];
+            clonedetail.removeChild(cloneinternboard.children[1].children[4]);
             clonedetail.appendChild(clonebottomdiv);
             clonedetail.insertBefore(cloneimg, clonedetail.children[0]);
 
             popup.insertBefore(clonedetail, popup.children[0]);
             popup.classList.toggle('active');
         });
-    })
+    });
     document.querySelector('[id="toggleoff"]').addEventListener('click', function () {
         var blur = document.querySelector('[id="blur"]');
         blur.classList.toggle('active');
@@ -114,7 +126,8 @@ onload = () => {
             popup.removeChild(popup.children[0]);
         }, 400)
         popup.classList.toggle('active');
-    })
+    });
+};
     // document.querySelector('[id=toggleoff]').addEventListener('click',function(){
     //     var blur = document.querySelector('[id="blur"]');
     //     blur.classList.toggle('active');   
@@ -124,7 +137,6 @@ onload = () => {
     //     popup.classList.toggle('active');
     // });
     /* End of JS Detail Button */
-};
 /* End of JS On Page Load */
 
 /* JS for Automatic Left to Right Slider after 5s delay*/

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/CRDPage/CRDHomePagecss.css">
-    <title>CRD Company Edit Page</title>
+    <title>Company Internship Edit Page</title>
 </head>
 
 <body>
@@ -16,13 +16,13 @@
             <h3 class="title">Kivi</h3>
             <div class="title-box">An OJT Website for Students and Companies</div>
             <a href="" class="btstyleapplication">Students</a>
-            <a href="/CRDPage/CRDMainPage.html" class="btstylehome">Home</a>
+            <a href="/CRDPage/CRDCompaniesPage.html" class="btstyleapplication">Companies</a>
             <a href="/HomePageWithoutLogin/HomePageWithoutLogin.html" class="btstylelogout">Logout</a>
         </div>
     </header>
     <!-- End of Headerbox -->
 
-    <h2 class="logintitle">Edit A Company's Information</h2>
+    <h2 class="logintitle">Create New Company's Internships Information</h2>
 
     <!-- Mainbox -->
     <div class="mainbox">
@@ -39,40 +39,31 @@
 
                     <div class="companyinforow">
                         <div class="companyform-element">
-                            Full Name:
-                            <br>
-                            <input class="inputinfo" type="text" id="fullname" placeholder="Full Name"
-                                name="fullname" />
-                        </div>
-                        <div class="companyform-element">
-                            Address:
-                            <br>
                             <input class="inputinfo" type="text" id="address" placeholder="Address"
                                 name="address" />
+                        </div>
+                        <div class="companyform-element">
+                            <input class="inputinfo" type="text" id="seasonsemester" placeholder="Season Semester"
+                                name="seasonsemester" /><!--dropdownlist-->
                         </div>
                     </div>
                     
                     <div class="companyinforow">
                         <div class="companyform-element">
-                            Email:
-                            <br>
-                            <input class="inputinfo" type="email" id="email" placeholder="Email" name="email" />
+                            <input class="inputinfo" type="number" id="year" placeholder="Year" name="year" /><!--dropdownlist-->
                         </div>
                         <div class="companyform-element">
-                            Phone Number:
-                            <br>
-                            <input class="inputinfo" type="tel" id="contact" placeholder="Contact" name="contact" />
+                            <input class="inputinfo" type="drop" id="major" placeholder="Major" name="major" /><!--dropdownlist-->
                         </div>
                     </div>
                 </form>
             </div>
             <div class="companytogglebuttons">
-                <a href="/CRDPage/CRDCompaniesPage.html" class="companyfulldetail">Go Back</a>
-                <input type="submit" form="companyinfochanges" class="companyfulldetail" value="Change" />
+                <a href="/CRDPage/CRDMainPage.html" class="companyfulldetail">Go Back</a>
+                <input type="submit" form="companyinfochanges" class="companyfulldetail" value="Create" />
             </div>
         </div>
     </div>
-    <!-- End of Mainbox -->
 
 
     <!-- Footerbox -->

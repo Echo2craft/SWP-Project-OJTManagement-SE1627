@@ -2,72 +2,325 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/loginstyle.css">
-    <title>Corperate Relations Department Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CRDHomePagecss.css">
+  <script src="CRDMainPagejs.js" type="text/javascript"></script>
+  <title>Corperate Relations Department Page</title>
 </head>
 
 <body>
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-        <div class="container">
-            <div class="site-logo">
-                <span class="text-primary" style="font-size:30px;font-display: block">Kivi</span>
-                <span class="slogan">An OJT Website for Students and Companies</span>
-            </div>
-            <div>
-                <a href="./HomePageWithoutLogin/HomePageWithoutLogin/HomePageWithoutLogin.html" class="nav-link">Home</a>
-            </div>
-            <div class="col-12">
-                <nav class="site-navigation text-right ml-auto " role="navigation">
-
-                    <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li>
-                            <a href="#home-section" class="nav-link btstyle">Students</a>
-                        </li>
-                        <li>
-                            <a href="#services-section" class="nav-link btstyle">Companies</a>
-                        </li>
-                        <li>
-                            <a href="#services-section" class="nav-link btstyle">Internships</a>
-                        </li>
-                        <li>
-                            <a href="#services-section" class="nav-link btstyle">Logout</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+  <div class="container" id="blur">
+    <!-- Headerbox -->
+    <header>
+      <div class="ctn">
+        <h3 class="title">Kivi</h3>
+        <div class="title-box">An OJT Website for Students and Companies</div>
+        <a href="" class="btstyleapplication">Students</a>
+        <a href="/CRDPage/CRDCompaniesPage.html" class="btstyleapplication">Companies</a>
+        <a href="/HomePageWithoutLogin/HomePageWithoutLogin.html" class="btstylelogout">Logout</a>
+      </div>
     </header>
-    <div class="page-title" style="margin-left:740px">Welcome, CRDeparment</div>
+    <!-- End of Headerbox -->
+
+    <h2 class="logintitle">Welcome CRDepartment</h2>
+
+    <!-- Mainbox -->
     <div class="mainbox">
-        <form action="SearchGo" method="get" class="searchbox">
-            <input type="text" id="course" class="searchinput" placeholder="Search Intership" autofocus required/>
-            <button class="btstyle"style="margin:auto; height:30px; ">Create</button>
-        </form>
-    </div>
-    
-                   
-    <footer>
-        <div class="credits">
-            KiVi OJT Website
-            <br> Contact: KiViNhanh247@gmail.com
-            <br> IT/Tech Support: 0128132923
-            <a href="https://pngtree.com/freepng/blue-fresh-2-5d-job-search-interview-illustration_4213257.html">
-                BG by 千图网
-            </a>
+
+      <!-- Searchbox input -->
+      <a href="/CRDPage/InternshipCreatePage.html" class="btnCreate">Create</a>
+      <form action="SearchGo" method="get" class="searchbox">
+
+        <!-- Tagsbox -->
+        <!-- <ul class="alltags">
+            <li class="year">2022 <span class="deletetag"></span></li>
+            <li class="major">SE <i class="deletetag"></i></li>
+            <li class="major">AI <i class="deletetag"></i></li>
+            <li class="major">IS <i class="deletetag"></i></li>
+            <li class="company">Microsoft <i class="deletetag"></i></li>
+            <li class="company">Tesla <i class="deletetag"></i></li>
+            <li class="company">Nestle <i class="deletetag"></i></li>
+            <li class="codelang">Python <i class="deletetag"></i></li>
+            <li class="codelang">SQL <i class="deletetag"></i></li>
+            <li class="codelang">PowerBI <i class="deletetag"></i></li>
+            <li class="codelang">Azure <i class="deletetag"></i></li>
+            <li class="codelang">COSMOS <i class="deletetag"></i></li>
+          </ul> -->
+        <!-- End of Tagsbox -->
+
+        <input type="text" id="course" class="searchinput" placeholder="Search Intership" autofocus required="" />
+        <input type="reset" class="searchreset" value="" />
+        <input type="submit" class="searchsubmit" value="" />
+      </form>
+      <div class="btnSelect" id="searchoptions" name="searchoption">
+        <button class="bydefault" id="selectbutton">Tags</button>
+        <ul class="btnSelectdropdown">
+          <li><button id="chooseFilter">Description</button></li>
+          <li><button id="chooseFilter">Major</button></li>
+        </ul>
+      </div>
+      <!-- End of Searchbox input -->
+
+      <!-- Slider -->
+      <div class="contentbox">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+              <img id="sponsortags1" src="/PictureCollection/Overall-Internship-Program-2022.png"
+                alt="Overall Internship Program">
+            </div>
+            <div class="slide">
+              <img id="sponsortags2" src="/PictureCollection/Microsoft-Internship-Program-2022.png"
+                alt="Microsoft Internship Program">
+            </div>
+            <div class="slide">
+              <img id="sponsortags3" src="/PictureCollection/Tesla-Internship-Program-2022.png"
+                alt="Tesla Internship Program">
+            </div>
+            <div class="slide">
+              <img id="sponsortags4" src="/PictureCollection/Nestle-Internship-Program-2022.png"
+                alt="Nestle Internship Program">
+            </div>
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
         </div>
+        <!-- End of Slider -->
+
+        <!--Internshipbox List-->
+        <div class="internshipsbox">
+          <ul class="internships">
+
+            <!-- First Internship -->
+            <li class="intern">
+              <img id="companylogo" src="/PictureCollection/Microsoft-Logo.png" alt="Microsoft Logo">
+              <div class="interndetail">
+                <h2>Software Engineer</h2>
+                <ul class="internrequirements">
+                  <h3>Redmond, Washington, United States</h3>
+                  <p>Requirements:</p>
+                  <li>
+                    3+ years of experience in writing SQL, COSMOS, and/or Python
+                  </li>
+                  <li>
+                    3+ years of experience advanced data modeling within Power BI
+                  </li>
+                  <li>
+                    3+ years of experience defining, building, releasing, and evangelizing Power BI based solutions
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                  <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                  </li>
+                </ul>
+                <h3><label>Semester: </label>Spring 2022</h3>
+                <h3><label>Major: </label>Software Engineer (SE)</h3>
+                <div class="interndetailtoggle">
+                  <ul class="interntagslist">
+                    <li id="tagPLSQL">SQL</li>
+                    <li id="tagPLPython">Python</li>
+                    <li id="tagPLCOSMOS">COSMOS</li>
+                    <li id="tagPLPowerBI">PowerBI</li>
+                    <li id="tagPLAzure">Azure</li>
+                    <li id="tagPLMVC">MVC</li>
+                  </ul>
+                  <div class="interntogglebuttons">
+                    <a href="/CRDPage/InternshipEditPage.html" class="internfulldetail">Edit</a>
+                    <a href="#" class="internfulldetail" id="toggleon">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- End of First Internship -->
+
+            <!-- Second Internship -->
+            <li class="intern">
+              <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
+              <div class="interndetail">
+                <h2 class="internName">Junior C# .Net Core Engineer</h2>
+                <ul class="internrequirements">
+                  <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
+                  <p>Requirements:</p>
+                  <li>About 1 Year experience with C#, ASP.NET, MVC.</li>
+                  <li>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </li>
+                  <li>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </li>
+                  <li>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </li>
+                  <li>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </li>
+                </ul>
+                <h3><label>Semester: </label>Spring 2022</h3>
+                <h3><label>Major: </label>Software Engineer (SE)</h3>
+                <div class="interndetailtoggle">
+                  <ul class="interntagslist">
+                    <li id="tagPLC#">C#</li>
+                    <li id="tagPLASP.NET">ASP.NET</li>
+                    <li id="tagPLAssembly">Assembly</li>
+                    <li id="tagPLGraphTalk">GraphTalk</li>
+                    <li id="tagPLSOPHAEROS">SOPHAEROS</li>
+                    <li id="tagPLMVC">MVC</li>
+                    <li id="tagPLMVC">MVC</li>
+                    <li id="tagPLMVC">MVC</li>
+                    <li id="tagPLMVC">MVC</li>
+                    <li id="tagPLMVC">MVC</li>
+                  </ul>
+                  <div class="interntogglebuttons">
+                    <a href="/CRDPage/InternshipEditPage.html" class="internfulldetail">Edit</a>
+                    <a href="#" class="internfulldetail" id="toggleon">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- End of Second Internship -->
+
+            <!-- Third Internship -->
+            <li class="intern">
+
+            </li>
+            <!-- End of Third Internship -->
+
+            <!-- Third Internship -->
+            <li class="intern">
+
+            </li>
+            <!-- End of Third Internship -->
+
+            <!-- Third Internship -->
+            <li class="intern">
+
+            </li>
+            <!-- End of Third Internship -->
+
+            <!-- Third Internship -->
+            <li class="intern">
+
+            </li>
+            <!-- End of Third Internship -->
+
+            <!-- Third Internship -->
+            <li class="intern">
+
+            </li>
+            <!-- End of Third Internship -->
+
+            <!-- Third Internship -->
+            <li class="intern">
+
+            </li>
+            <!-- End of Third Internship -->
+
+          </ul>
+        </div>
+        <!-- End of Internshipbox List -->
+
+        <!-- PageNumberbox -->
+        <ul class="pagenumberlist">
+          <li id="pagefirst">
+            << </li>
+          <li id="pageprevious">
+            < </li>
+          <li id="pagenumbers">1</li>
+          <li id="pagenumbers">2</li>
+          <li id="pagenumbers">3</li>
+          <li id="pagenumbers">4</li>
+          <li id="pagenumbers">5</li>
+          <li id="pagenext">></li>
+          <li id="pagelast">>></li>
+        </ul>
+        <!-- End of PageNumberbox -->
+
+      </div>
+    </div>
+    <!-- End of Mainbox -->
+
+
+    <!-- Footerbox -->
+    <footer>
+      <div class="credits">
+        KiVi OJT Website
+        <br>
+        Contact: KiViNhanh247@gmail.com
+        <br>
+        IT/Tech Support: 0128132923
+        <a href="https://pngtree.com/freepng/blue-fresh-2-5d-job-search-interview-illustration_4213257.html">
+          BG by 千图网
+        </a>
+      </div>
     </footer>
+    <!-- End of Footerbox -->
+  </div>
 
-
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Popupbox -->
+  <div id="popup">
+    <h5 class="logintitle">Are you sure you want to remove this Internship?</h5>
+    <div class="buttonspack">
+      <a href="#" class="internboardbutton" id="toggleoff">Cancel</a>
+      <a href="#" class="internboardbutton">Yes</a>
+    </div>
+  </div>
+  <!-- End of Popupbox -->
 </body>
 
 </html>

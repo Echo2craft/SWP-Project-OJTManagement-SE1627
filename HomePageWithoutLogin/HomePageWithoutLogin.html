@@ -34,7 +34,7 @@
     <div class="mainbox">
 
       <!-- Searchbox input -->
-      <form action="SearchGo" method="get" class="searchbox">
+      <form action="SearchGo" method="get" class="searchbox" id="searchbox">
 
         <!-- Tagsbox -->
         <!-- <ul class="alltags">
@@ -57,6 +57,22 @@
         <input type="reset" class="searchreset" value="" />
         <input type="submit" class="searchsubmit" value="" />
       </form>
+      <!-- <select name="searchoption" id="searchoptions" form="searchbox" class="btnSelect">
+        <option value="bytag">Tags</option>
+        <option value="byjobd">Job Description</option>
+        <option value="bymajor">Major</option>
+      </select> -->
+      <div class="btnSelect" id="searchoptions" name="searchoption">
+        <button class="bydefault" id="selectbutton">Tags</button>
+        <ul class="btnSelectdropdown">
+          <li>
+            <button id="chooseFilter">Description</button>
+          </li>
+          <li>
+            <button id="chooseFilter">Major</button>
+          </li>
+        </ul>
+      </div>
       <!-- End of Searchbox input -->
 
       <!-- Slider -->
@@ -108,8 +124,8 @@
               <img id="companylogo" src="/PictureCollection/Microsoft-Logo.png" alt="Microsoft Logo">
               <div class="interndetail">
                 <h2>Software Engineer</h2>
-                <h3>Redmond, Washington, United States</h3>
                 <ul class="internrequirements">
+                  <h3>Redmond, Washington, United States</h3>
                   <p>Requirements:</p>
                   <li>
                     3+ years of experience in writing SQL, COSMOS, and/or Python
@@ -160,8 +176,9 @@
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
                   </li>
-
                 </ul>
+                <h3><label>Semester: </label>Spring 2022</h3>
+                <h3><label>Major: </label>Software Engineer (SE)</h3>
                 <div class="interndetailtoggle">
                   <ul class="interntagslist">
                     <li id="tagPLSQL">SQL</li>
@@ -182,8 +199,8 @@
               <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
               <div class="interndetail">
                 <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
                 <ul class="internrequirements">
+                  <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
                   <p>Requirements:</p>
                   <li>About 1 Year experience with C#, ASP.NET, MVC.</li>
                   <li>
@@ -203,6 +220,8 @@
                     pariatur.
                   </li>
                 </ul>
+                <h3><label>Semester: </label>Spring 2022</h3>
+                <h3><label>Major: </label>Software Engineer (SE)</h3>
                 <div class="interndetailtoggle">
                   <ul class="interntagslist">
                     <li id="tagPLC#">C#</li>
@@ -227,8 +246,8 @@
               <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
               <div class="interndetail">
                 <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
                 <ul class="internrequirements">
+                  <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
                   <p>Requirements:</p>
                   <li>
                     About 1 Year experience with C#, ASP.NET, MVC.
@@ -250,6 +269,8 @@
                     pariatur.
                   </li>
                 </ul>
+                <h3><label>Semester: </label>Spring 2022</h3>
+                <h3><label>Major: </label>Software Engineer (SE)</h3>
                 <div class="interndetailtoggle">
                   <ul class="interntagslist">
                     <li id="tagPLC#">C#</li>
@@ -269,226 +290,31 @@
 
             <!-- Third Internship -->
             <li class="intern">
-              <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
-              <div class="interndetail">
-                <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
-                <ul class="internrequirements">
-                  <p>Requirements:</p>
-                  <li>
-                    About 1 Year experience with C#, ASP.NET, MVC.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                </ul>
-                <div class="interndetailtoggle">
-                  <ul class="interntagslist">
-                    <li id="tagPLC#">C#</li>
-                    <li id="tagPLASP.NET">ASP.NET</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                  </ul>
-                  <a href="#" class="internfulldetail" id="toggleon">Detail</a>
-                </div>
-              </div>
+              
             </li>
             <!-- End of Third Internship -->
 
             <!-- Third Internship -->
             <li class="intern">
-              <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
-              <div class="interndetail">
-                <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
-                <ul class="internrequirements">
-                  <p>Requirements:</p>
-                  <li>
-                    About 1 Year experience with C#, ASP.NET, MVC.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                </ul>
-                <div class="interndetailtoggle">
-                  <ul class="interntagslist">
-                    <li id="tagPLC#">C#</li>
-                    <li id="tagPLASP.NET">ASP.NET</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                  </ul>
-                  <a href="#" class="internfulldetail" id="toggleon">Detail</a>
-                </div>
-              </div>
+              
             </li>
             <!-- End of Third Internship -->
 
             <!-- Third Internship -->
             <li class="intern">
-              <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
-              <div class="interndetail">
-                <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
-                <ul class="internrequirements">
-                  <p>Requirements:</p>
-                  <li>
-                    About 1 Year experience with C#, ASP.NET, MVC.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                </ul>
-                <div class="interndetailtoggle">
-                  <ul class="interntagslist">
-                    <li id="tagPLC#">C#</li>
-                    <li id="tagPLASP.NET">ASP.NET</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                  </ul>
-                  <a href="#" class="internfulldetail" id="toggleon">Detail</a>
-                </div>
-              </div>
+              
             </li>
             <!-- End of Third Internship -->
 
             <!-- Third Internship -->
             <li class="intern">
-              <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
-              <div class="interndetail">
-                <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
-                <ul class="internrequirements">
-                  <p>Requirements:</p>
-                  <li>
-                    About 1 Year experience with C#, ASP.NET, MVC.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                </ul>
-                <div class="interndetailtoggle">
-                  <ul class="interntagslist">
-                    <li id="tagPLC#">C#</li>
-                    <li id="tagPLASP.NET">ASP.NET</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                  </ul>
-                  <a href="#" class="internfulldetail" id="toggleon">Detail</a>
-                </div>
-              </div>
+              
             </li>
             <!-- End of Third Internship -->
 
             <!-- Third Internship -->
             <li class="intern">
-              <img id="companylogo" src="/PictureCollection/Render-Logo.png" alt="Render Logo">
-              <div class="interndetail">
-                <h2 class="internName">Junior C# .Net Core Engineer</h2>
-                <h3 class="internAddres">No. 05, Lane 82, Dich Vong Hau Ward, Cau Giay District, Hanoi.</h3>
-                <ul class="internrequirements">
-                  <p>Requirements:</p>
-                  <li>
-                    About 1 Year experience with C#, ASP.NET, MVC.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                  <li>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </li>
-                </ul>
-                <div class="interndetailtoggle">
-                  <ul class="interntagslist">
-                    <li id="tagPLC#">C#</li>
-                    <li id="tagPLASP.NET">ASP.NET</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                    <li id="tagPLMVC">MVC</li>
-                  </ul>
-                  <a href="#" class="internfulldetail" id="toggleon">Detail</a>
-                </div>
-              </div>
+              
             </li>
             <!-- End of Third Internship -->
 
